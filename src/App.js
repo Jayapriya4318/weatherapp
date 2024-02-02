@@ -57,7 +57,9 @@ function App(){
             imgdata?(<img src={imgdata} alt="" className="size-20 mx-auto" />):(<img src={imgdata} alt="" className="size-20 mx-auto" style={{display:"none"}}  />)
           }
           <h3 className="text-center mt-5 text-2xl font-bold">{weather}</h3>
-          <h3 className="text-center mt-5 text-4xl font-bold">{temp} &#8451;</h3>
+          
+          {
+            temp?(<h3 className="text-center mt-5 text-4xl font-bold">{temp} &#8451;</h3>):(<h3 className="text-center mt-5 text-4xl font-bold">{temp}</h3>)}
           <p className="text-center text-lg mt-5">{desc}</p>
           
         </div>
