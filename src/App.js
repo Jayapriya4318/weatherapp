@@ -24,7 +24,7 @@ function App(){
       settemp((report.data.main.temp-273.15).toFixed(2))
       setdesc(report.data.weather[0].description)
       setcname(report.data.name.toUpperCase())
-
+      
       let imgpath;
       if(report.data.weather[0].main=="Clouds"){
         imgpath=cloudy
@@ -39,6 +39,7 @@ function App(){
       }
       setimgdata(imgpath)
     })
+    setcity('')
   }
   return(
     <>
